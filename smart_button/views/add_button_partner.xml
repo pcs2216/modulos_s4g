@@ -7,7 +7,9 @@
 			<field name="inherit_id" ref="crm.view_partners_form_crm1"></field>
 			<field name="arch" type="xml">
 				<xpath expr="//button[@name='schedule_meeting']" position="after">
-					<button class="oe_stat_button o_res_partner_tip_opp" name="553" string="Ticket" icon="fa-ticket" type="action" context="{'search_default_partner_id': active_id}"/>
+					<button class="oe_stat_button o_res_partner_tip_opp" name="553"  icon="fa-ticket" type="action" context="{'search_default_partner_id': active_id}">
+						<field string="Tickets" name="x_blemer_ticket_count" widget="statinfo"/>
+					</button>
 				</xpath>
 			</field>
 		</record>
